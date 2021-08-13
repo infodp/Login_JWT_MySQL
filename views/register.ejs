@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <style>
+    body {  
+      /* display: flex; */
+      align-items: center;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background-color:rgba(255,255,255,0.95);
+    }
+    </style>
+    <title>Login con Node + JWT + MySQL</title>
+  </head>
+  <body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 shadow-lg p-3 mb-5">
+
+          <div class="card border-primary">
+            <div class="card-header bg-primary text-white">Registrarse</div>
+            <div class="card-body text-primary">
+              <form action="/register" method="POST">        
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre completo</label>
+                    <input id="name" name="name" type="text" class="form-control" aria-describedby="emailHelp">              
+                </div>
+                <div class="mb-3">
+                    <label for="user" class="form-label">Cuenta de usuario</label>
+                    <input id="user" name="user" type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="pass" class="form-label">Password</label>
+                    <input id="pass" name="pass" type="password" class="form-control">
+                </div>                            
+            </div>
+            <div class="card-footer bg-transparent border-primary">
+              <a href="/" type="button" class="btn btn-secondary">Cancelar</a>
+              <button type="submit" class="btn btn-primary">Registrar</button>
+            </div>
+            </form>
+          </div>   
+    
+        </div>
+    </div>
+</div>
+
+ 
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
